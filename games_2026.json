@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T17:28:37+09:00",
+ "updated": "2026-10-26T19:06:43+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14551,9 +14551,9 @@
    "stadium": "DAEGU",
    "home": "SAMSUNG",
    "away": "KIA",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "진행중",
    "note": "PO 1차전"
   },
   {
