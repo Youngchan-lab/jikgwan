@@ -95,14 +95,22 @@ def parse_rows(rows: list[dict], year: int, series: str = "regular") -> list[dic
         stadium = _text(others[-2]) if len(others) >= 2 else ""
         note = _text(others[-1]) if others else ""
 
-        if away_score is not None:
+        # 경기 당일에는 시작 전에도 0:0 점수가 표시되므로 점수만으로 종료를 판단하지 않는다.
+        # 끝난 경기는 게임센터 링크가 '리뷰(section=REVIEW)'로 바뀐다.
+        today = date.today().isoformat()
+        is_review = "section=REVIEW" in by_class.get("relay", "")
+        if away_score is not None and (is_review or (current_date and current_date < today)):
             status = "종료"
         elif any(k in note for k in CANCEL_KEYWORDS):
             status = "취소"
-        elif current_date and current_date < date.today().isoformat():
+        elif current_date and current_date < today:
             status = "취소"  # 지난 날짜인데 점수가 없으면 열리지 않은 경기로 본다
+        elif away_score is not None:
+            status = "진행중"  # 오늘 경기, 점수는 있지만 아직 리뷰 링크가 없음 (시작 직전 포함)
         else:
             status = "예정"
+        if status in ("예정", "취소"):
+            home_score = away_score = None
 
         games.append({
             "id": f"KBO-{game_id}" if game_id else None,

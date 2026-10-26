@@ -86,9 +86,13 @@ def run_live(year: int) -> None:
     if leagues & {"K1"}:
         fresh += kleague.collect(year, [t.month])
 
-    merged = {g["id"]: g for g in games}
-    merged.update({g["id"]: g for g in fresh})  # 새로 받은 경기로 덮어쓰기
-    save(year, list(merged.values()))
+    # 다시 받은 리그·달의 기존 경기는 지우고 새 데이터로 바꾼다.
+    # (예: 한국시리즈 'PO승리팀'이 실제 팀으로 바뀌면 경기 ID도 바뀌기 때문)
+    month = t.strftime("%Y-%m")
+    refreshed = leagues
+    kept = [g for g in games
+            if not (g["league"] in refreshed and (g["date"] or "").startswith(month))]
+    save(year, kept + fresh)
 
 
 if __name__ == "__main__":
