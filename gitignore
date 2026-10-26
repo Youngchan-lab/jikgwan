@@ -1,0 +1,5 @@
+__pycache__/
+*.txt
+!requirements.txt
+kbo_*.json
+kleague_*.json
