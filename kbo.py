@@ -8,7 +8,7 @@ import json
 import re
 import sys
 import time
-from datetime import date
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 from bs4 import BeautifulSoup
@@ -48,6 +48,17 @@ def fetch_month(year: int, month: int, series: str = "regular") -> list[dict]:
 
 def _text(html: str) -> str:
     return BeautifulSoup(html or "", "html.parser").get_text(strip=True)
+
+
+KST = timezone(timedelta(hours=9))
+
+
+def _started(game_date: str | None, game_time: str) -> bool:
+    """한국 시간 기준으로 경기 시작 시각이 지났는지 확인한다."""
+    if not game_date or not re.match(r"^\d{2}:\d{2}$", game_time):
+        return True  # 시각을 모르면 점수가 있는 것을 기준으로 진행중으로 본다
+    start = datetime.fromisoformat(f"{game_date}T{game_time}:00").replace(tzinfo=KST)
+    return datetime.now(KST) >= start
 
 
 def parse_rows(rows: list[dict], year: int, series: str = "regular") -> list[dict]:
@@ -97,7 +108,7 @@ def parse_rows(rows: list[dict], year: int, series: str = "regular") -> list[dic
 
         # 경기 당일에는 시작 전에도 0:0 점수가 표시되므로 점수만으로 종료를 판단하지 않는다.
         # 끝난 경기는 게임센터 링크가 '리뷰(section=REVIEW)'로 바뀐다.
-        today = date.today().isoformat()
+        today = datetime.now(KST).date().isoformat()
         is_review = "section=REVIEW" in by_class.get("relay", "")
         if away_score is not None and (is_review or (current_date and current_date < today)):
             status = "종료"
@@ -105,10 +116,10 @@ def parse_rows(rows: list[dict], year: int, series: str = "regular") -> list[dic
             status = "취소"
         elif current_date and current_date < today:
             status = "취소"  # 지난 날짜인데 점수가 없으면 열리지 않은 경기로 본다
-        elif away_score is not None:
-            status = "진행중"  # 오늘 경기, 점수는 있지만 아직 리뷰 링크가 없음 (시작 직전 포함)
+        elif away_score is not None and _started(current_date, _text(by_class.get("time", ""))):
+            status = "진행중"  # 오늘 경기, 시작 시각이 지났고 아직 리뷰 링크가 없음
         else:
-            status = "예정"
+            status = "예정"    # 시작 전 0:0 표시도 여기로 온다
         if status in ("예정", "취소"):
             home_score = away_score = None
 
