@@ -42,7 +42,16 @@ for g in games:
     print(json.dumps(picked, ensure_ascii=False))
 
 os.makedirs("probe", exist_ok=True)
-path = f"probe/kbo_live_{now.strftime('%Y%m%d_%H%M')}.json"
+
+# 1) 실행할 때마다 한 줄씩 기록 (경기 중 점수 변화 확인용)
+with open(f"probe/live_log_{day}.txt", "a", encoding="utf-8") as f:
+    for g in games:
+        f.write(f"{now.strftime('%H:%M:%S')} {g.get('G_ID')} "
+                f"상태={g.get('GAME_STATE_SC')} 이닝={g.get('GAME_INN_NO')} "
+                f"원정={g.get('T_SCORE_CN')} 홈={g.get('B_SCORE_CN')}\n")
+
+# 2) 원본 전체는 날짜별 최신 1개만 저장
+path = f"probe/kbo_live_{day}.json"
 with open(path, "w", encoding="utf-8") as f:
     json.dump(data, f, ensure_ascii=False, indent=1)
 print("원본 저장:", path)
