@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T22:12:56+09:00",
+ "updated": "2026-10-29T18:31:46+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14579,9 +14579,9 @@
    "stadium": "GWANGJU",
    "home": "KIA",
    "away": "SAMSUNG",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "진행중",
    "note": "PO 3차전"
   },
   {
