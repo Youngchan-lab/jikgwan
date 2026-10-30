@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T22:29:05+09:00",
+ "updated": "2026-10-31T05:28:06+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14715,20 +14715,6 @@
    "status_code": "NS"
   },
   {
-   "id": "KBO-20261102XXKT0",
-   "league": "KBO",
-   "series": "포스트시즌",
-   "date": "2026-11-02",
-   "time": "18:30",
-   "stadium": "SUWON",
-   "home": "KT",
-   "away": "PO승리팀",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "note": null
-  },
-  {
    "id": "KBO-20261103XXKT0",
    "league": "KBO",
    "series": "포스트시즌",
@@ -14743,14 +14729,14 @@
    "note": null
   },
   {
-   "id": "KBO-20261105KTXX0",
+   "id": "KBO-20261104XXKT0",
    "league": "KBO",
    "series": "포스트시즌",
-   "date": "2026-11-05",
+   "date": "2026-11-04",
    "time": "18:30",
-   "stadium": "미정",
-   "home": "PO승리팀",
-   "away": "KT",
+   "stadium": "SUWON",
+   "home": "KT",
+   "away": "PO승리팀",
    "home_score": null,
    "away_score": null,
    "status": "예정",
@@ -14853,6 +14839,20 @@
    "status_code": "NS"
   },
   {
+   "id": "KBO-20261108KTXX0",
+   "league": "KBO",
+   "series": "포스트시즌",
+   "date": "2026-11-08",
+   "time": "14:00",
+   "stadium": "미정",
+   "home": "PO승리팀",
+   "away": "KT",
+   "home_score": null,
+   "away_score": null,
+   "status": "예정",
+   "note": null
+  },
+  {
    "id": "K1-2026-1-209",
    "league": "K1",
    "series": "하나은행 K리그1 2026",
@@ -14887,10 +14887,10 @@
    "status_code": "NS"
   },
   {
-   "id": "KBO-20261109XXKT0",
+   "id": "KBO-20261110XXKT0",
    "league": "KBO",
    "series": "포스트시즌",
-   "date": "2026-11-09",
+   "date": "2026-11-10",
    "time": "18:30",
    "stadium": "SUWON",
    "home": "KT",
@@ -14901,10 +14901,10 @@
    "note": null
   },
   {
-   "id": "KBO-20261110XXKT0",
+   "id": "KBO-20261111XXKT0",
    "league": "KBO",
    "series": "포스트시즌",
-   "date": "2026-11-10",
+   "date": "2026-11-11",
    "time": "18:30",
    "stadium": "SUWON",
    "home": "KT",
