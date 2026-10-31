@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T16:44:20+09:00",
+ "updated": "2026-10-31T17:28:14+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14630,7 +14630,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "1S 14"
+   "status_code": "1E"
   },
   {
    "id": "K1-2026-1-201",
