@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T18:55:14+09:00",
+ "updated": "2026-11-01T16:50:21+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14644,10 +14644,10 @@
    "away": "K04",
    "home_name": "포항",
    "away_name": "제주",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "NS"
+   "home_score": 1,
+   "away_score": 1,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "K1-2026-1-202",
@@ -14661,10 +14661,10 @@
    "away": "K21",
    "home_name": "울산",
    "away_name": "강원",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "NS"
+   "home_score": 2,
+   "away_score": 1,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "KBO-20261101HTSS0",
@@ -14675,9 +14675,9 @@
    "stadium": "DAEGU",
    "home": "SAMSUNG",
    "away": "KIA",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
+   "home_score": 6,
+   "away_score": 1,
+   "status": "종료",
    "note": "PO 5차전"
   },
   {
@@ -14695,7 +14695,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "NS"
+   "status_code": "1S 20"
   },
   {
    "id": "K1-2026-1-204",
@@ -14712,49 +14712,49 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "NS"
+   "status_code": "1S 19"
   },
   {
-   "id": "KBO-20261103XXKT0",
+   "id": "KBO-20261103SSKT0",
    "league": "KBO",
    "series": "포스트시즌",
    "date": "2026-11-03",
    "time": "18:30",
    "stadium": "SUWON",
    "home": "KT",
-   "away": "PO승리팀",
+   "away": "SAMSUNG",
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "note": null
+   "note": "KS 1차전"
   },
   {
-   "id": "KBO-20261104XXKT0",
+   "id": "KBO-20261104SSKT0",
    "league": "KBO",
    "series": "포스트시즌",
    "date": "2026-11-04",
    "time": "18:30",
    "stadium": "SUWON",
    "home": "KT",
-   "away": "PO승리팀",
+   "away": "SAMSUNG",
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "note": null
+   "note": "KS 2차전"
   },
   {
-   "id": "KBO-20261106KTXX0",
+   "id": "KBO-20261106KTSS0",
    "league": "KBO",
    "series": "포스트시즌",
    "date": "2026-11-06",
    "time": "18:30",
-   "stadium": "미정",
-   "home": "PO승리팀",
+   "stadium": "DAEGU",
+   "home": "SAMSUNG",
    "away": "KT",
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "note": null
+   "note": "KS 3차전"
   },
   {
    "id": "K1-2026-1-205",
@@ -14774,18 +14774,18 @@
    "status_code": "NS"
   },
   {
-   "id": "KBO-20261107KTXX0",
+   "id": "KBO-20261107KTSS0",
    "league": "KBO",
    "series": "포스트시즌",
    "date": "2026-11-07",
    "time": "14:00",
-   "stadium": "미정",
-   "home": "PO승리팀",
+   "stadium": "DAEGU",
+   "home": "SAMSUNG",
    "away": "KT",
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "note": null
+   "note": "KS 4차전"
   },
   {
    "id": "K1-2026-1-206",
@@ -14839,18 +14839,18 @@
    "status_code": "NS"
   },
   {
-   "id": "KBO-20261108KTXX0",
+   "id": "KBO-20261108KTSS0",
    "league": "KBO",
    "series": "포스트시즌",
    "date": "2026-11-08",
    "time": "14:00",
-   "stadium": "미정",
-   "home": "PO승리팀",
+   "stadium": "DAEGU",
+   "home": "SAMSUNG",
    "away": "KT",
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "note": null
+   "note": "KS 5차전"
   },
   {
    "id": "K1-2026-1-209",
@@ -14887,32 +14887,32 @@
    "status_code": "NS"
   },
   {
-   "id": "KBO-20261110XXKT0",
+   "id": "KBO-20261110SSKT0",
    "league": "KBO",
    "series": "포스트시즌",
    "date": "2026-11-10",
    "time": "18:30",
    "stadium": "SUWON",
    "home": "KT",
-   "away": "PO승리팀",
+   "away": "SAMSUNG",
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "note": null
+   "note": "KS 6차전"
   },
   {
-   "id": "KBO-20261111XXKT0",
+   "id": "KBO-20261111SSKT0",
    "league": "KBO",
    "series": "포스트시즌",
    "date": "2026-11-11",
    "time": "18:30",
    "stadium": "SUWON",
    "home": "KT",
-   "away": "PO승리팀",
+   "away": "SAMSUNG",
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "note": null
+   "note": "KS 7차전"
   },
   {
    "id": "K1-2026-1-211",
