@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T17:30:57+09:00",
+ "updated": "2026-11-01T18:18:38+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14695,7 +14695,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "1E"
+   "status_code": "2S 42"
   },
   {
    "id": "K1-2026-1-204",
@@ -14712,7 +14712,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "1E"
+   "status_code": "2S 45"
   },
   {
    "id": "KBO-20261103SSKT0",
