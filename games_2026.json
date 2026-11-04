@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T22:41:47+09:00",
+ "updated": "2026-11-04T19:20:45+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14737,9 +14737,9 @@
    "stadium": "SUWON",
    "home": "KT",
    "away": "SAMSUNG",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "진행중",
    "note": "KS 2차전"
   },
   {
