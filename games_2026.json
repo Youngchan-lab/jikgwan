@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T16:52:10+09:00",
+ "updated": "2026-11-07T17:38:05+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14782,9 +14782,9 @@
    "stadium": "DAEGU",
    "home": "SAMSUNG",
    "away": "KT",
-   "home_score": 0,
-   "away_score": 0,
-   "status": "진행중",
+   "home_score": 10,
+   "away_score": 5,
+   "status": "종료",
    "note": "KS 4차전"
   },
   {
@@ -14802,7 +14802,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "1S 20"
+   "status_code": "2S 3"
   },
   {
    "id": "K1-2026-1-207",
