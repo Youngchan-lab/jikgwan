@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T21:49:10+09:00",
+ "updated": "2026-11-07T16:52:10+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14768,10 +14768,10 @@
    "away": "K22",
    "home_name": "제주",
    "away_name": "광주",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "NS"
+   "home_score": 1,
+   "away_score": 1,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "KBO-20261107KTSS0",
@@ -14782,9 +14782,9 @@
    "stadium": "DAEGU",
    "home": "SAMSUNG",
    "away": "KT",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "진행중",
    "note": "KS 4차전"
   },
   {
@@ -14802,7 +14802,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "NS"
+   "status_code": "1S 20"
   },
   {
    "id": "K1-2026-1-207",
