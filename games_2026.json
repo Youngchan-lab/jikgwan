@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T18:26:46+09:00",
+ "updated": "2026-11-07T19:14:35+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14799,10 +14799,10 @@
    "away": "K27",
    "home_name": "김천",
    "away_name": "안양",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "2S 52"
+   "home_score": 1,
+   "away_score": 0,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "K1-2026-1-207",
