@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T19:14:35+09:00",
+ "updated": "2026-11-08T16:52:29+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14816,10 +14816,10 @@
    "away": "K01",
    "home_name": "서울",
    "away_name": "울산",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "NS"
+   "home_score": 1,
+   "away_score": 2,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "K1-2026-1-208",
@@ -14833,10 +14833,10 @@
    "away": "K18",
    "home_name": "대전",
    "away_name": "인천",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "NS"
+   "home_score": 2,
+   "away_score": 0,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "KBO-20261108KTSS0",
@@ -14847,9 +14847,9 @@
    "stadium": "DAEGU",
    "home": "SAMSUNG",
    "away": "KT",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
+   "home_score": 0,
+   "away_score": 0,
+   "status": "진행중",
    "note": "KS 5차전"
   },
   {
@@ -14867,7 +14867,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "NS"
+   "status_code": "1S 22"
   },
   {
    "id": "K1-2026-1-210",
@@ -14884,7 +14884,7 @@
    "home_score": null,
    "away_score": null,
    "status": "예정",
-   "status_code": "NS"
+   "status_code": "1S 21"
   },
   {
    "id": "KBO-20261110SSKT0",
