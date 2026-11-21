@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T17:55:01+09:00",
+ "updated": "2026-11-21T18:40:49+09:00",
  "games": [
   {
    "id": "K1-2026-4-1",
@@ -14932,10 +14932,10 @@
    "away": "K10",
    "home_name": "강원",
    "away_name": "대전",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "2S 18"
+   "home_score": 1,
+   "away_score": 3,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "K1-2026-1-214",
@@ -14949,10 +14949,10 @@
    "away": "K01",
    "home_name": "인천",
    "away_name": "울산",
-   "home_score": null,
-   "away_score": null,
-   "status": "예정",
-   "status_code": "2S 22"
+   "home_score": 2,
+   "away_score": 1,
+   "status": "종료",
+   "status_code": "FE"
   },
   {
    "id": "K1-2026-1-215",
